@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "name": "nik-boilerplate",
+  "devDependencies": {
+    "chalk": "^2.0.1"
+  },
+  "scripts": {
+    "backend": "yarn workspace backend",
+    "frontend": "yarn workspace frontend"
+  },
+  "workspaces": [
+    "frontend",
+    "backend"
+  ]
+}
