@@ -1,6 +1,7 @@
 import { Controller, Get } from '@nestjs/common';
 import { AppService } from './app.service';
-import { User } from '@prisma/client';
+import { UserDto } from './dtos/user.dto';
+import { ApiOkResponse } from '@nestjs/swagger';
 
 @Controller()
 export class AppController {
@@ -11,7 +12,9 @@ export class AppController {
     return this.appService.getHello();
   }
 
-  getUsers(): Promise<User[]> {
+  @Get('users')
+  @ApiOkResponse({ type: UserDto, isArray: true })
+  getUsers(): Promise<UserDto[]> {
     return this.appService.users({});
   }
 }
