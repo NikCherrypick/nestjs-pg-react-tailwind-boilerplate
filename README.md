@@ -24,6 +24,5 @@ yarn backend add @prisma/client
 
 ### TOODs:
 
-Backend: Swagger
-eslint
-Frontend: React Query, Env, tailwind
+
+Frontend: tailwind

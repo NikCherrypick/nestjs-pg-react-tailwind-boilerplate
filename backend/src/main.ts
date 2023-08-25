@@ -11,6 +11,8 @@ async function bootstrap() {
     .setDescription('API description')
     .setBasePath('/swagger')
     .build();
+
+  app.enableCors();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('swagger', app, document);
 
