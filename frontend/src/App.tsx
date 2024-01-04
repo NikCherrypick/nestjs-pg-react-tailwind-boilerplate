@@ -24,11 +24,19 @@ function Users() {
 
   return (
     <>
-      {!isLoading
-        ? data?.map((user: { id: number; name: string }) => {
-            return <p key={user.id}>{JSON.stringify(user)}</p>;
-          })
-        : "Loading"}
+      <h1 className="text-3xl font-bold underline text-cyan-500">
+        Hello world!
+      </h1>
+      {!isLoading ? (
+        <div>
+          Finsihed loading users:
+          {data?.map((user: { id: number; name: string }) => {
+            return <span key={user.id}>Users: {JSON.stringify(user)}</span>;
+          })}
+        </div>
+      ) : (
+        "Loading"
+      )}
     </>
   );
 }
