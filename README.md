@@ -1,4 +1,4 @@
-# Boilerplate for Hackathons
+# Monorepo Boilerplate
 
 <img align="left" alt="TypeScript" width="40px" src="https://user-images.githubusercontent.com/41573499/129371694-5d17af2c-8109-4f0b-a809-760cc8895aa4.png" />
 <img align="left" alt="Nest.js" width="40px" src="https://github.com/marwin1991/profile-technology-icons/assets/136815194/519bfaf3-c242-431e-a269-876979f05574" />
